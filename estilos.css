@@ -19,7 +19,7 @@
 
 body{
     height: 100%;
-    background-color: #343a40
+    background-color: #212529
 }
 
 /* ------------------------NAVBAR PRINCIPAL-------------------- */
@@ -161,7 +161,7 @@ img:hover{
     transform: scale(1.2,1.2);
 }
 
-/* -----------------------------PUBLICIDAD------------------------- */
+/* -----------------------------CONTACTOS LATERAL------------------------- */
 
 section{
     grid-area: contactos;
@@ -193,19 +193,19 @@ section{
 .facebook{
     padding: 1rem;
     color: #0081a7;
-    font-size: 75px;
+    font-size: 55px;
 }
 
 .instagram{
     padding: 1rem;
     color: #0081a7;
-    font-size: 75px;
+    font-size: 55px;
 }
 
 .wpp{
     padding: 1rem;
     color: #0081a7;
-    font-size: 75px;
+    font-size: 55px;
 }
 
 .contactos{
@@ -245,7 +245,7 @@ footer{
 }
 
 .footer__menu a:hover{
-    color: #636156;
+    color: #212529;
 }
 
 .footer__lists{
@@ -255,6 +255,19 @@ footer{
 
 /* ----------------------------------------------------------PAGE PRODUCTOS----------------------------------------------------------- */
 
+#grilla-productos{
+    display: grid;
+    grid-template-areas:
+    "nav header header"
+    "nav contactos productos"
+    "nav contactos productos"
+    "footer footer footer";
+    grid-template-rows: 100px 1fr 100px 1fr;
+    grid-template-columns: 13% 20% 67%;
+    height: 100vh;
+    margin: 0px;
+}
+
 .img--productos{
     height: 735px;
     width: 310px;
@@ -263,7 +276,8 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    margin: 50px;
+    margin-top: 1px;
+    margin: 40px;
     border: 2px solid #073b4c;
     border-radius: 1rem;
 }
@@ -290,20 +304,18 @@ footer{
     color: white;
 }
 
-/* --------------------------------------------------------PAGE ARMADO--------------------------------------------------- */
+/* --------------------------------------------------------PLACAS DE VIDEO--------------------------------------------------- */
 
-#grilla-armado{
-        display: grid;
-        grid-template-areas:
-        "nav header"
-        "nav servicios"
-        "nav servicios"
-        "footer footer";
-        grid-template-rows: 100px 100px 800px; 
-        grid-template-columns: 15% auto auto;
-        height: 100vh;
-        margin: 0px;
-    }
-    .produ{
-        grid-area: produ;
-    }
+.placasVideo-caja{
+    margin: 50px;
+    height: 58rem;
+    width: 73rem;
+    border: 2px solid red;
+    background-color: #212529;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.placasVideo-img img{
+    width: 20%;
+}
